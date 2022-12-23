@@ -1,0 +1,33 @@
+
+<html>
+  <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Write a JavaScript program to compute the sum of all digits that occur in
+a given string.
+</title>
+  </head>
+  <body>
+   <script>
+    function sum_digits_from_string(dstr) {
+  var dsum = 0;
+
+  for (var i = 0; i < dstr.length; i++)
+  {
+
+    if (/[0-9]/.test(dstr[i])) dsum += parseInt(dstr[i])
+  }
+  return dsum;
+}
+
+document.write(sum_digits_from_string("abcd12efg9"))
+document.write(sum_digits_from_string("w3resource"))
+
+
+
+
+
+   </script>
+   </body>
+   </html>        
+
